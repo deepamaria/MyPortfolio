@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(246, 224, 228);
+    }
+
+    .Footer{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(87, 84, 84);
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBar {
+        height: 10%;
+        width: 100%;
+        background-color: rgb(192, 186, 186);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navList {
+        height: 100%;
+        width: 70%;
+    
+    /* border: 2px solid black; */
+        list-style: none;
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        margin-right: 20px;
+    }
+
+    .logo {
+        height: 100%;
+        width: 20%;
+    }
+
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainContent {
+        height: 80%;
+        width: 100%;
+        align-items: center;
+        /* padding: 1%; */
+        
+        font-size: 1em;
+    }
+
+    .section1 {
+        height: 15%;
+        width: 100%;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQub2IDZD_k9h85kNXWGwlWuTrFRTmqZtTC0Q&usqp=CAU");
+        /* background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIEAVgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBQQGB//EADQQAAEDAwIEAwYEBwAAAAAAAAEAAhEDITESQQRRcYEiMmEFE3KRobEzQsHwFCM0c9Hh8f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAYEQEBAQEBAAAAAAAAAAAAAAAAATERIf/aAAwDAQACEQMRAD8A+O6bXlW3Y8uastvICJohbQMSdh6KReyMNJtHYBQCUAmLR3BKkWv9kZEq4mNRtzVUotyFRbaEyL9+SqFAogDqqIkDFuSbERG45oY9B0QC2l70marGfGTf5Aqkxs41aZv6KIhsXhRoRhvZFpJIEX3VCw3ayKPRHHJRovfEqgAFIKZE91I5KBbmi2kfRVpTDf1CqMQMIE6d47qtMpxBsRAKDTdAmJUTSFEU5rSGjVBJ3hHFlz8M91SAIDRfw3+ZXUBfKIECdlIyj6bqAFUAQoQjIvdVEIAMzc3KsjFiFZF5VxZQBHcISDCZG/1UIvYKhJA3FlExzT/xUgOnVohvu6VRpHIHKbEzFkmhxNF1OWECcgZT2kOEtIIUA4F/moSwGHOiyXx7jT4cvBggiCLrMZWdWcxhIA1ZccJbxWuBM+ilwbGCgovZakx5fAkuO6bAnPdECRaVUTuijkoQMKqEi0YuqIjKIhTIwgW8WgKI3QdhlRB54VHBoAMQu7gOJcw6R4icBZ8Sm0HFr2kGCDlchqVOMaabqdenqdABgi5/RZUEOLBM7Fdj2BzHBlaQR4mRqXIfDIkX5hW0dXA2dp1lrjyz0WyGhrQGi0WWLwPvalT3dFwGrzO5BbunSAAZjdagCJhVFkyBuqiVoLI2UgzzRkWlQwCYEDaboAIcDuDCpEbD/CpB5ogQIKbSoOe2Wtk9YScZT6LgxzZIdfy4XIMbXbTp6WUyx53nK56ji432thaXFVKLgyjTdEnxR++izX2sTPrzQafs7jqNMBjqbWE5cBla7CCA6CJ2KxPYwpCo6rVbIY2ZOxlanG8dT4ZgMaicAWW5fAdWqxhg5JwlU6up8EicdFwt46nVqa3eGV00najLSSSQTHROjsIshRAh7Q5kFp5KjclaAOHNRWfU/RRB5k+J3hbE7BdHuzSaY0zAmYlKDC925PZdrhrkF3jAEH99FyHC4gHJBQOJdCbpNQkgE9OaAiSdIiBKA6U6CS4Bg/LOSlue5xOokk5VhxJlxuOaGoIdzQQFafBEVQ4iqWVRgDELLC7uDqilSfpI1OETCDo9mOd/Fva+odIBIbOStMrN9mAnVUlrWhxkxd3fkPRaJNs5W5gh6SqQVHQLAnsrWhjAtbTkkGBYImPL6YJIBdIEDASKukuD2AiTeyuk0uY4ASyYk7E2C5Bmmoykw+EAjUARkX/2udzR5tQdJNt1qcVUa/hX6HtNMxIziYWa5ugN0v1AjooFGVS6qgpGWh0RZtr35kJJMNcDzVEDf5Wr1hNo6ZEuE8nBWH0m07g6iJHokag54nCDs4emypqqVajWtBwd/RadGsx9NhDonAIv8lgF0G2JsuhnEA0tD8DEKwdT+MeHFlRrnQbQL/JRVpbILXtJjy6hICio4qP5vgKLhfw2/wB4fYqKLIf7Q8o+EJPs3+rp9/sVailxVcb+I3oud2FFEmIp23RUooqIMoj5lFEHXxflb1/RRRRUf//Z"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-blend-mode: overlay; */
+               
+        color:white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        text-align: justify;
+        gap: 5px;
+        padding: 10%;
+    }
+    
+    .section1 h1 {
+        color:bisque;
+        text-shadow: 2px 3px rgb(95, 88, 88);
+    }
+    
+    .section2 {
+        height: 30%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
+        gap: 10px;
+        padding: 10%;
+    }
+
+    .person_img img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .section3 {
+        height: 30%;
+        width: 100%;
+    }
+        
+    .experience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+.skills{
+    height: 300px;
+    width: 100px;
+    color: brown;
+}
+.contact_section{
+    height: 600px;
+    width: 320px;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    /* gap: 16px; */
+}
+
+h3{
+    color: maroon;
+    
+}
+
+.form_container{
+    height: 500px;
+    width: 190px;
+    background-color: white;
+    box-shadow: 1px 2px 2px  rgb(177, 175, 175);
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.send{
+    background-color: maroon;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
